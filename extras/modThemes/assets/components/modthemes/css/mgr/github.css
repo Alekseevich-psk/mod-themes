@@ -1,0 +1,129 @@
+#modx-container * {
+  outline: none !important;
+}
+
+:root {
+  --transition: 0.2s ease-in-out;
+  --white: #e9e9e9f6;
+  --black: #000;
+  /* bg */
+  --header: #25292e;
+  --sidebar: #202428;
+  --sidebarHoverBg: #25292e;
+  --content: #25292e;
+  --footer: #25292e;
+}
+
+#modx-header {
+  background-color: var(--header);
+}
+
+#modx-navbar .icon {
+  font-size: 18px;
+}
+
+#modx-navbar a .icon,
+#modx-navbar a .label,
+#modx-navbar a .description {
+  color: rgba(255, 255, 255, 0.9647058824);
+}
+
+#modx-header .modx-subnav li a:hover,
+#modx-footer .modx-subnav li a:hover {
+  color: #000;
+}
+
+#modx-leftbar {
+  background-color: var(--sidebar);
+}
+#modx-leftbar {
+  scrollbar-width: thin;
+  scrollbar-color: #25292e #202428;
+}
+#modx-leftbar::-webkit-scrollbar {
+  height: 20px;
+  width: 8px;
+  border-radius: 4px !important;
+}
+#modx-leftbar::-webkit-scrollbar-track {
+  border-radius: 4px !important;
+  background: #202428;
+}
+#modx-leftbar::-webkit-scrollbar-thumb {
+  background-color: #202428;
+  border-radius: 4px !important;
+}
+#modx-leftbar #modx-leftbar-header a {
+  font-weight: 700;
+  transition: var(--transition);
+}
+#modx-leftbar #modx-leftbar-header a:hover {
+  color: var(--white);
+}
+#modx-leftbar * {
+  outline: none !important;
+}
+#modx-leftbar a,
+#modx-leftbar .tree-pseudoroot-node.x-tree-node-el.x-tree-node-expanded,
+#modx-leftbar .tree-pseudoroot-node.x-tree-node-el.x-tree-node-expanded span,
+#modx-leftbar .tree-pseudoroot-node.x-tree-node-el.x-tree-node-expanded > .icon,
+#modx-leftbar .x-tree-node a span,
+#modx-leftbar .x-dd-drag-ghost a span,
+#modx-leftbar #modx-leftbar .icon,
+#modx-leftbar .x-tree-node .icon {
+  color: var(--white);
+}
+#modx-leftbar .x-tree-node {
+  background-color: var(--white);
+}
+#modx-leftbar .x-tab-strip-over {
+  background-color: var(--sidebarHoverBg);
+}
+#modx-leftbar .x-tree-node-ct {
+  border-bottom: 1px solid rgb(66, 66, 66);
+}
+#modx-leftbar .x-tree-node-ct .x-tree-node-anchor {
+  font-size: 14px;
+}
+#modx-leftbar .x-tree-node-ct .x-tree-node-anchor span {
+  transition: var(--transition);
+}
+#modx-leftbar .x-tree-node-ct .x-tree-node-anchor span:hover {
+  color: #fff;
+}
+#modx-leftbar .x-tree-node-ct .x-tree-node-anchor span span {
+  font-size: 11px;
+  opacity: 0.7;
+}
+#modx-leftbar .x-tree-node-ct .icon {
+  left: 0;
+  font-size: 14px;
+}
+#modx-leftbar #modx-leftbar .x-tree .x-panel-body,
+#modx-leftbar #modx-leftbar .x-tree-node,
+#modx-leftbar #modx-leftbar-tabpanel .x-tab-panel-header .x-tab-strip li.x-tab-strip-active,
+#modx-leftbar .tree-pseudoroot-node.x-tree-node-el,
+#modx-leftbar .tree-pseudoroot-node.x-tree-node-el + .x-tree-node-ct,
+#modx-leftbar .tree-pseudoroot-node.x-tree-node-el + div > .x-tree-node-ct,
+#modx-leftbar .x-tree-node-el,
+#modx-leftbar .x-tree-arrows .x-tree-elbow-plus:hover,
+#modx-leftbar .x-tree-arrows .x-tree-elbow-minus:hover,
+#modx-leftbar .x-tree-arrows .x-tree-elbow-end-plus:hover,
+#modx-leftbar .x-tree-arrows .x-tree-elbow-end-minus:hover {
+  background-color: var(--sidebarHoverBg);
+}
+#modx-leftbar .tree-pseudoroot-node.x-tree-node-el.x-tree-node-collapsed {
+  border-bottom: 1px solid rgba(228, 228, 228, 0.1803921569);
+}
+#modx-leftbar .modx-tree-node-tool-ct .x-btn:hover,
+#modx-leftbar .modx-tree-node-tool-ct .x-btn:focus {
+  transition: var(--transition);
+  color: #ad99d3 !important;
+}
+#modx-leftbar .ext-webkit *:focus-visible {
+  outline: none !important;
+}
+
+#modx-resource-content .x-form-textarea + div {
+  min-height: 440px;
+}/*# sourceMappingURL=themes.css.map */
