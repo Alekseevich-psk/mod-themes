@@ -2,7 +2,7 @@
 
 return [
     'modThemes' => [
-        'file' => 'modThemes',
+        'file' => 'modthemes',
         'description' => '',
         'events' => [
             'OnManagerPageBeforeRender' => [],

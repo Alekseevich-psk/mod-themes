@@ -1,0 +1,263 @@
+#modx-leftbar .x-tab-panel-noborder {
+    margin: 0;
+}
+/*menu*/
+#modx-navbar {
+    background: #25292e none !important;
+    box-shadow: none;
+}
+#modx-navbar ul.modx-subnav li a {
+    background-color: #25292e;
+}
+#modx-navbar ul.modx-subnav li a:hover {
+    background: #32373d;
+}
+#modx-navbar ul.modx-subnav .has-subnav:after {
+    border: none;
+    color: #97aab4;
+    content: "";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 10px;
+    top: 40%;
+}
+/*tree*/
+#modx-leftbar {
+    background-color: #202428 !important;
+}
+#modx-leftbar-tabpanel .x-tab-panel-body-noborder,
+#modx-leftbar-tabpanel .x-tree .x-panel-body {
+    background-color: #202428;
+    border-radius: 0;
+}
+/*collapse button*/
+#modx-leftbar-tabs-xsplit .x-layout-mini-east {
+    left: -2px;
+}
+#modx-leftbar-tabs-xcollapsed .x-layout-mini,
+#modx-leftbar-tabs-xsplit .x-layout-mini {
+    top: 42px !important;
+    height: 38px !important;
+    left: 0 !important;
+    opacity: 0.7 !important;
+    background: #202428 !important;
+}
+/*tabs*/
+#modx-leftbar .x-tab-panel-header {
+    background: #202428 !important;
+}
+#modx-leftbar-tabpanel .x-tab-strip li {
+    color: #a0a0a0;
+}
+#modx-leftbar-tabpanel .x-tab-strip li:hover {
+    color: #dfdfdf;
+}
+
+#modx-leftbar-tabpanel .x-tab-strip li.x-tab-strip-active {
+    background-color: #1c1f22; /*#219a8f*/
+    box-shadow: 0 -5px 0 #3a9aba, -1px 0 0 transparent, 0 1px 2px #555, 0 0 7px #151515;
+    color: #fff;
+}
+#modx-leftbar-tabpanel .x-tab-strip li.x-tab-strip-active::before {
+    background: transparent;
+}
+/*toolbar*/
+#modx-leftbar-tabpanel > .x-tab-panel-bwrap > .x-tab-panel-body {
+    border-radius: 0;
+}
+#modx-leftbar-tabpanel .x-toolbar-cell .x-btn-noicon,
+#modx-leftbar .x-toolbar-ct .x-toolbar-right #emptifier.x-btn {
+    background-color: transparent;
+    color: #fff !important;
+    margin-right: 10px;
+    opacity: 0.6;
+}
+#modx-leftbar .x-toolbar-ct .x-toolbar-right #emptifier.x-btn {
+    margin-right: 20px;
+}
+#modx-leftbar .x-toolbar-ct .x-toolbar-right #emptifier.x-item-disabled {
+    opacity: 0.3;
+}
+#modx-leftbar-tabpanel .x-toolbar-cell .x-btn-noicon:hover,
+#modx-leftbar .x-toolbar-ct .x-toolbar-right #emptifier.x-btn:not(.x-item-disabled):hover {
+    opacity: 0.9;
+}
+#modx-resource-tree-tbar,
+#modx-tree-element .x-panel-tbar {
+    background: #1c1f22 !important; /*26313E*/
+}
+#modx-resource-tree-tbar .x-toolbar-left .x-btn:first-child,
+#modx-tree-element .x-toolbar-left .x-btn:first-child {
+    margin-left: 5px !important;
+}
+/*tree nodes*/
+#modx-leftbar-tabpanel .x-tree-node .x-tree-node-el,
+#modx-leftbar-tabpanel .x-tree-node .x-tree-node-el span,
+#modx-leftbar-tabpanel .x-tree-node .x-tree-node-el .icon {
+    background-color: #202428;
+    color: #d7d7d7;
+}
+/*selected node*/
+#modx-leftbar-tabpanel .x-tree-node .x-tree-selected,
+#modx-leftbar-tabpanel .x-tree-node .x-tree-selected span,
+#modx-leftbar-tabpanel .x-tree-node .x-tree-selected .icon {
+    background-color: #292e35;
+}
+/*hover a node*/
+#modx-leftbar-tabpanel .x-tree-node .x-tree-node-el.x-tree-node-over,
+#modx-leftbar-tabpanel .x-tree-node .x-tree-node-el.x-tree-node-over span,
+#modx-leftbar-tabpanel .x-tree-node .x-tree-node-el.x-tree-node-over .icon {
+    background-color: #2c3137;
+}
+/*hidden in menu*/
+#modx-leftbar-tabpanel .x-tree-node .hidemenu,
+#modx-leftbar-tabpanel .x-tree-node .hidemenu span,
+#modx-leftbar-tabpanel .x-tree-node .hidemenu .icon {
+    color: #d7d7d7 !important;
+    opacity: 0.7;
+    font-style: normal;
+}
+/*unpublished*/
+#modx-leftbar-tabpanel .x-tree-node .unpublished,
+#modx-leftbar-tabpanel .x-tree-node .unpublished span {
+    font-style: italic;
+}
+/*disabled elements nodes*/
+#modx-leftbar-tabpanel .x-tree-node .element-node-disabled,
+#modx-leftbar-tabpanel .x-tree-node .element-node-disabled span,
+#modx-leftbar-tabpanel .x-tree-node .element-node-disabled i.icon {
+    opacity: 0.7;
+}
+#modx-leftbar-tabpanel .x-tree-node .element-node-disabled,
+#modx-leftbar-tabpanel .x-tree-node .element-node-disabled span {
+    font-style: italic;
+}
+/*deleted resources nodes*/
+#modx-leftbar-tabpanel .x-tree-node .deleted,
+#modx-leftbar-tabpanel .x-tree-node .deleted span,
+#modx-leftbar-tabpanel .x-tree-node .deleted i.icon,
+#modx-leftbar-tabpanel .x-tree-node .deleted i.icon-large {
+    color: #ff675d !important;
+    opacity: 0.85;
+}
+/*favorites*/
+#modx-leftbar-tabpanel .x-tree-node .x-element-favorite > a span,
+#modx-leftbar-tabpanel .x-tree-node .x-element-favorite > .icon {
+    color: #85e6af !important;
+}
+/*root*/
+#modx-leftbar-tabpanel .tree-pseudoroot-node.x-tree-node-el,
+#modx-leftbar-tabpanel .tree-pseudoroot-node.x-tree-node-el span,
+#modx-leftbar-tabpanel .tree-pseudoroot-node.x-tree-node-el .icon,
+#modx-leftbar-tabpanel .tree-pseudoroot-node.x-tree-node-el.x-tree-node-expanded,
+#modx-leftbar-tabpanel .tree-pseudoroot-node.x-tree-node-el.x-tree-node-expanded span,
+#modx-leftbar-tabpanel .tree-pseudoroot-node.x-tree-node-el.x-tree-node-expanded .icon {
+    background-color: #2c3137;
+}
+#modx-leftbar-tabpanel .tree-pseudoroot-node.x-tree-node-el.x-tree-node-over,
+#modx-leftbar-tabpanel .tree-pseudoroot-node.x-tree-node-el.x-tree-node-over span,
+#modx-leftbar-tabpanel .tree-pseudoroot-node.x-tree-node-el.x-tree-node-over .icon {
+    background-color: #3a4249;
+}
+.tree-pseudoroot-node.x-tree-node-el.ec-over {
+    background-color: transparent;
+}
+#modx-leftbar-tabpanel .x-tree-arrows .x-tree-elbow-plus:hover,
+#modx-leftbar-tabpanel .x-tree-arrows .x-tree-elbow-minus:hover,
+#modx-leftbar-tabpanel .x-tree-arrows .x-tree-elbow-end-plus:hover,
+#modx-leftbar-tabpanel .x-tree-arrows .x-tree-elbow-end-minus:hover {
+    background-color: #404952;
+}
+/*node toolbar*/
+#modx-leftbar-tabpanel .tree-pseudoroot-node.x-tree-node-el .modx-tree-node-tool-ct {
+    right: 16px;
+}
+#modx-leftbar-tabpanel .tree-pseudoroot-node.x-tree-node-el .modx-tree-node-tool-ct,
+#modx-leftbar-tabpanel .tree-pseudoroot-node.x-tree-node-el .modx-tree-node-tool-ct .x-btn {
+    color: #a0a0a0 !important;
+    opacity: 0.8;
+}
+#modx-leftbar-tabpanel .tree-pseudoroot-node.x-tree-node-el .modx-tree-node-tool-ct .x-btn-over {
+    color: #fff !important;
+}
+/*mask*/
+#modx-leftbar-tabpanel .ext-el-mask {
+    background-color: #111;
+}
+/*horizontal scrollbar*/
+.tree-pseudoroot-node.x-tree-node-el + .x-tree-node-ct,
+.tree-pseudoroot-node.x-tree-node-el + div > .x-tree-node-ct {
+    overflow-x: hidden;
+}
+.primary-button.x-btn,
+.actions button.primary-button,
+.primary-button.inline-button,
+.primary-button.x-superboxselect-item,
+.primary-button.x-form-trigger,
+.primary-button.x-date-mp-ok,
+.primary-button.x-date-mp-cancel {
+    background-color: #45505f;
+    background-image: linear-gradient(#45505f, #2b323b);
+    color: #fff;
+}
+.primary-button.x-btn:hover,
+.actions button.primary-button:hover,
+.primary-button.inline-button:hover,
+.primary-button.x-superboxselect-item:hover,
+.primary-button.x-form-trigger:hover,
+.primary-button.x-date-mp-ok:hover,
+.primary-button.x-date-mp-cancel:hover {
+    background-color: #45505f !important;
+    background-image: linear-gradient(#45505f, #2b323b);
+}
+
+.actions button.x-btn-over,
+.x-btn-over.inline-button,
+.x-btn-over.x-superboxselect-item,
+.x-btn-over.x-form-trigger,
+.x-btn-over.x-date-mp-ok,
+.x-btn-over.x-date-mp-cancel,
+.x-btn-over.x-btn,
+.actions button:hover,
+.inline-button:hover,
+.x-superboxselect-item:hover,
+.x-form-trigger:hover,
+.x-date-mp-ok:hover,
+.x-date-mp-cancel:hover,
+.x-btn:hover,
+.actions button.x-btn-focus,
+.x-btn-focus.inline-button,
+.x-btn-focus.x-superboxselect-item,
+.x-btn-focus.x-form-trigger,
+.x-btn-focus.x-date-mp-ok,
+.x-btn-focus.x-date-mp-cancel,
+.x-btn-focus.x-btn,
+.actions button:focus,
+.inline-button:focus,
+.x-superboxselect-item:focus,
+.x-form-trigger:focus,
+.x-date-mp-ok:focus,
+.x-date-mp-cancel:focus,
+.x-btn:focus {
+    background-color: #45505f !important;
+    background-image: linear-gradient(#4d5c70, #35404e);
+}
+
+#modx-manager-search {
+    background: #2a3037;
+    border: 1px solid #21262b;
+}
+
+#modx-manager-search:after {
+    border-bottom: 11px solid #2a3037;
+}
+
+.x-form-field-wrap .x-form-trigger.x-form-trigger-over,
+.x-form-field-wrap .x-form-trigger:hover {
+    box-shadow: 0 0 0 1px #273035;
+}
+
+.x-form-field-wrap .x-form-trigger.x-form-trigger-over,
+.x-form-field-wrap .x-form-trigger:hover {
+    box-shadow: none;
+}

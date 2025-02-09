@@ -654,17 +654,17 @@ $config = require(dirname(__FILE__) . '/config.inc.php');
 $install = new modThemesPackage(MODX_CORE_PATH, $config);
 $builder = $install->process();
 
-// if (!empty($config['download'])) {
-//     $name = $builder->getSignature() . '.transport.zip';
-//     if ($content = file_get_contents(MODX_CORE_PATH . '/packages/' . $name)) {
-//         header('Content-Description: File Transfer');
-//         header('Content-Type: application/octet-stream');
-//         header('Content-Disposition: attachment; filename=' . $name);
-//         header('Content-Transfer-Encoding: binary');
-//         header('Expires: 0');
-//         header('Cache-Control: must-revalidate');
-//         header('Pragma: public');
-//         header('Content-Length: ' . strlen($content));
-//         exit($content);
-//     }
-// }
+if (!empty($config['download'])) {
+    $name = $builder->getSignature() . '.transport.zip';
+    if ($content = file_get_contents(MODX_CORE_PATH . '/packages/' . $name)) {
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
+        header('Content-Disposition: attachment; filename=' . $name);
+        header('Content-Transfer-Encoding: binary');
+        header('Expires: 0');
+        header('Cache-Control: must-revalidate');
+        header('Pragma: public');
+        header('Content-Length: ' . strlen($content));
+        exit($content);
+    }
+}

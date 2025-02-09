@@ -3,7 +3,7 @@
 class ModThemes
 {
     private $nameComponent = 'modthemes';
-    private $sysKey = 'mod_themes_theme';
+    private $sysKey = 'modthemes';
 
     private $versionModx;
     private $systemSetting;
@@ -41,7 +41,7 @@ class ModThemes
         $pathCssFile = 'components/' . $this->nameComponent . '/css/mgr/' . $this->versionModx . "/" . $selectTheme . '.css';
 
         if (file_exists($this->assetsPath . $pathCssFile)) {
-            $this->modx->controller->addCss($this->assetsPath . $pathCssFile);
+            $this->modx->controller->addCss(MODX_ASSETS_URL . $pathCssFile);
         }
     }
 
@@ -51,7 +51,7 @@ class ModThemes
             $this->createSystemSetting();
         }
 
-        if ($this->selectTheme === "") {
+        if ($this->selectTheme !== "") {
             $this->addCssFile($this->selectTheme);
         }
     }

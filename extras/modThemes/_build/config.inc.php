@@ -10,7 +10,7 @@ if (!defined('MODX_CORE_PATH')) {
 
 return [
     'name' => 'modThemes',
-    'name_lower' => 'modThemes',
+    'name_lower' => 'modthemes',
     'version' => '1.0.0',
     'release' => 'pl',
     // Install package to site right after build
